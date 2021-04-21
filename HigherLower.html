@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+    <title>Higher Or Lower Game</title>
+
+</head>
+
+<body>
+    <h1>    Higher Or Lower Guessing Game  </h1>
+
+    <div style="display: block; margin-top: 3vh; width: 100%;">
+
+
+        <h1 id="gameResponse"></h1>
+     <input type="number" id="userInput" placeholder="Enter a number">
+      
+		<button id="enterBtn" onclick="checkValue()" style="%;">Enter
+
+        </button>
+
+    </div>
+
+  <button id="restartBtn" onclick="startOver()">Restart  </button>
+
+
+
+<div class="rule"><h4>Guess A Number between 1 and 1000. Pick a Mid Range Number and whether higher or lower guess a quarter range to narrow it down until you win,  your remaining guesses are displayed on the left. </h4>
+	
+	</div>
+
+    <h3 id="tries"></h3>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+
+</html>
