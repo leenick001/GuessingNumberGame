@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 
@@ -15,35 +15,27 @@
 </head>
 
 <body>
-    <h1>    Higher Or Lower Guessing Game  </h1>
-
-    <div style="display: block; margin-top: 3vh; width: 100%;">
-
-
-        <h1 id="gameResponse"></h1>
-     <input type="number" id="userInput" placeholder="Enter a number">
-      
-		<button id="enterBtn" onclick="checkValue()" style="%;">Enter
-
-        </button>
-
-    </div>
-
-  <button id="restartBtn" onclick="startOver()">Restart  </button>
-
-
-
-<div class="rule"><h4>Guess A Number between 1 and 1000. Pick a Mid Range Number and whether higher or lower guess a quarter range to narrow it down until you win,  your remaining guesses are displayed on the left. </h4>
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+    <h1> Higher Or Lower Guessing Game  </h1>	
+		</div>
+		</div>
+<div class="row">
+<div class="col-lg-12" ><h3>Guess A Number between 1 and 1000. Pick a Mid Range Number and whether higher or lower guess a quarter range to narrow it down until you win,  your remaining guesses are displayed on the left. </h3>
 	
 	</div>
-
+</div>
+	<div class="col-md-12">
+        <h1 id="gameResponse"></h1>
+     <input type="number" class="col-lg-12" id="userInput" placeholder="Enter a number">
+		</div>
+     <button id="enterBtn" onclick="checkValue()" style="%;">Guess
+        </button>
+		<button id="restartBtn" class="col-md-12 col-md-12" onclick="startOver()">Restart  </button>
     <h3 id="tries"></h3>
-
-
+</div>
     <script src="index.js"></script>
-
-
 </body>
-
 
 </html>

@@ -30,14 +30,10 @@ function gameOver()
 
 {  
 
-
     gameResponse.style.color = 'red';
 
 
     gameResponse.innerText = 'You lose...';
-
-
-
 
 
     userInput.style.display = 'none';
@@ -53,12 +49,7 @@ function gameOver()
 
 
 
-
-
 }
-
-
-
 
 
 function startOver(){
@@ -68,9 +59,6 @@ function startOver(){
 
 
     gameResponse.innerText = '';
-
-
-
 
 
     userInput.style.display = 'block';
@@ -95,8 +83,6 @@ function startOver(){
 
 
 }
-
-
 
 
 
@@ -163,17 +149,12 @@ function createResponse(numToCheck) {
     if(Math.abs(numToCheck - winningNumber) >= 900){
 
 
-
-
-
         gameResponse.style.color = 'purple';
-
 
         if(numToCheck - winningNumber < 0){
 
 
             //user inputted number is less than the winning number
-
 
             gameResponse.innerText = 'You\'re super cold...  higher';
 
@@ -204,16 +185,12 @@ function createResponse(numToCheck) {
 
         }else{
 
-
             gameResponse.innerText = 'You\'re WAY way WAAAAAAAAAAAY off go lower';
-
 
         }
 
 
     }else if(Math.abs(numToCheck - winningNumber) < 500 && Math.abs(numToCheck - winningNumber) >= 300){
-
-
 
 
 
@@ -349,9 +326,6 @@ function createResponse(numToCheck) {
 }
 
 
-
-
-
 function checkValue(numberToCheck = 0,enterKeyPress = 0){
 
 
@@ -361,13 +335,7 @@ function checkValue(numberToCheck = 0,enterKeyPress = 0){
         numberToCheck = Number(userInput.value);
 
 
-
-
-
         console.log(winningNumber);
-
-
-
 
 
         if(numberToCheck != winningNumber){
@@ -383,9 +351,6 @@ function checkValue(numberToCheck = 0,enterKeyPress = 0){
 
 
             gameResponse.innerText = 'You wiiiiiiiiin!';
-
-
-
 
 
             userInput.style.display = 'none';
@@ -422,7 +387,7 @@ function checkValue(numberToCheck = 0,enterKeyPress = 0){
 
 
             gameResponse.style.color = 'green';
-
+            gameResponse.style.fontSize = 12;
 
             gameResponse.innerText = 'You wiiiiiiiiin!';
 

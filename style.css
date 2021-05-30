@@ -3,66 +3,69 @@
             padding: 0;
             box-sizing: border-box;
         }
+
 @font-face {
 	font-family:'manteka';
 	 src: url("font/manteka.ttf");
 } 
 
+        body{
+			font-family:'manteka';
+        }
 
+.container {
+	height: 9em;
+	width: 80%;
+	margin: 10px auto;
+	text-align: center;
+	
+}
 
 h1    {
 width: 100%; 
 text-align: center;
 margin-top: 4em;
-color: white;
-background-color: black;
 }
-
-
-        body{
-            background-color: goldenrod;
-			font-family:'manteka';
-        }
-
 .rule {
+	width: 100%;
+	margin: 0 auto;
 	display: flex;
-	flex-direction: row;
-	width: 20%;
-	margin: 1em auto;
-	
+}
+.thumbnail {
+	display: flex;
 }
 #gameResponse {
      width: 100%; 
-    text-align: center;
-     margin-bottom: 3vh;
+     margin: 0 auto;
+	position: relative;
 }
 
 #restartBtn {
-
      border-radius: 10px; 
      display: none; 
-     margin: 1vh auto;
-     width: 10%;
-     height: 20%;
+     margin: 0 auto;
+     width: 300px;
+     height: 50px;
 	padding:50px;
-	
 }
 #enterBtn {
-	border-radius: 10px; 
-	display: block; 
-	margin: 1vh auto; 
-	width: 30%;
-	background-color: blue;
+	position: relative;
+	border-radius: 20px; 
+	margin: 0 auto; 
+	width: 300px;
+	background-color: lightblue;
 }
 
 #userInput {
-    border-radius: 10px; 
-    display: block; 
-    margin: 1vh auto; 
-   width: 30%;
+	display: flex;
+    border-radius: 10px;  
+    margin: 30px 50% 10px 30%; 
+    width: 400px;
+	height:50px;
+	padding-top: 20px;
+	position: relative;
 }
 #tries  {
-	position: fixed; 
-	bottom: -5em; 
-	right: -2em;
+	position: relative;
+	margin: 10px auto;
 }
